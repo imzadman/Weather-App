@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
   const [inputValue, setInputValue] = useState("");
   const apiKey = "b9a199bb489dce5591456f3cff637c11";
-  const api = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apiKey}&units=metric`;
+  const api = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apiKey}`;
   const [loading, setLoading] = useState(false);
   const [weatherData, setWeatherData] = useState(null);
   const [icon, setIcon] = useState(null);
