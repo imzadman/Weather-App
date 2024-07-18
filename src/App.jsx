@@ -88,7 +88,7 @@ function App() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-3xl font-bold">
-                    {Math.round(weatherData.main.temp)}°C
+                    {Math.round(weatherData.main.temp - 273.15)}°C
                   </p>
                   <p className="text-gray-600">
                     {weatherData.weather[0].description}
